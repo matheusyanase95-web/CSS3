@@ -1,4 +1,5 @@
 #cabecalho {
+<<<<<<< HEAD
 
 }
 
@@ -6,3 +7,11 @@
      background-color: red
     
 }
+=======
+  background-color: red;
+}
+
+.pd {
+  background-color: yellow;
+}
+>>>>>>> d8e97764284b8aa976b386ad4b1752529b17b01a
