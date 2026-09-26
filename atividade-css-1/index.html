@@ -8,31 +8,66 @@
 <body>
     <link rel="stylesheet" href="./style.css"/>
     <style>
-    body {
-        background-color: darkgray;
-    }
+        *{
+            margin: 0;
+            padding: 0;,
+            box-shadow: none;
+        }
+        
+        .container{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: gray;
+            gap: 20px;
+        }
 
-    h1 {
-        background-color: blue;
-    }
-
-    p {
-        color: black;
-    }
-</style>
-
-    <style>
-        h1{
+        .cards{
+            border: 1px solid red;
+            height: 400px;
+            width: 300px;
             background-color: lightblue;
+
+            div{
+            width: 50%;
+            height: 100vh;
+            background-color: red;
+        }
         }
         p{
-            color: black;
+            font-size: 2em;
+        }
+        div{
+            font-size: 20px;
+        }
+        bory{
+            font-size: 50px;
+        }
+        html{
+            font-size: 10px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 50%;
+            height: 100vh;
+            /* background-color: red; */
         }
     </style>
     
-   <h1>Periféricos</h1>
-   <a href="https://www.pichau.com.br"> Clique Aqui</a>
-   
+      <h1 style="font-size: 50px;">Periféricos</h1>
+
+   <Clique href="https://www.pichau.com.br" style="font-size: 25px;">Clique Aqui</a>
+    
+     <div class="container">
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+
    <div>
     <img src="../img 2/Teclado.jpg" alt="Teclado"/>
     <p style="font-size: 30px;">Teclado</p>
@@ -46,13 +81,16 @@
     <div>
         <img src="../img 2/mouse.webp" alt="Mouse"/>
         <p style="font-size: 30px;">Mouse</p>
+        </div>
 
     <div>
         <img src="../img 2/Gabinete.jpg" alt="Gabinete"/>
         <p style="font-size: 30px;">Gabinete</p>
     </div>
 
+    
     <p>Periféricos de PC são dispositivos externos que se conectam ao computador para enviar ou receber informações.
     Entrada: Enviam dados para o computador. Exemplos: teclado, mouse e microfone. Saída: Mostram dados processados pelo computador.
     Exemplos: monitor e caixas de som.</p>
+    </body>
 </html>
