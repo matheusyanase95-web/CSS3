@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+        }
+
+        .container{
+            border: 1px solid black;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: gray;
+            gap: 20px;
+            
+        }
+
+        .cards{
+            border: 1px solid red;
+            height: 400px;
+            width: 300px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+    </div>
+</body>
+</html>
