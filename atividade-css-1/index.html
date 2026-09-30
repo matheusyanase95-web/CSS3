@@ -3,58 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periféricos</title>
+    <title>Minha Loja</title>
 
-<link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
 
+
+/* Cabeçalho */
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Menu */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+
+/* Conteúdo */
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* Produtos */
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* Cada produto */
+
+.produto {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ccc;
+}
+
+
+/* Imagens */
+
+.produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+
+/* Nome do produto */
+
+.produto h3 {
+    font-size: 22px;
+}
+
+
+/* Preço */
+
+.produto p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Botão */
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+
+/* Rodapé */
+
+footer {
+    margin-top: 40px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+    </style>
 </head>
 <body>
-
-     <h1>Periféricos em Promoção</h1>
     
-    <style>
+    <header>
+        <h1>Minha Loja</h1>
 
-          .produtos {
-            display: flex;
-            gap: 30px;
-        }
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
 
-        .produtos img{
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
-        }
+    <main>
 
-        .produtos{
-            display: flex;
-        }
-    </style>
-    
-      <h1 style="font-size: 50px;">Periféricos</h1>
+        <h2>Produtos em Destaques</h2>
 
-   <div>
-    <img src="../img 2/Teclado.jpg" alt="Teclado"/>
-    <p style="font-size: 30px;">Teclado</p>
-</div>
+        <section class="Produtos">
 
-    <div>
-        <img src="../img 2/monitor.jpg" alt="Monitor"/>
-        <p style="font-size: 30px;">Monitor</p>
-    </div>
+            <div class="Produtos">
+                <img src="img 2/Teclado.jpg" alt="Teclado">
+                <h3>Teclado Gamer</h3>
+                <p>R$ 150,00</p>
+                <button>Comprar</button>
+            </div>
 
-    <div>
-        <img src="../img 2/mouse.webp" alt="Mouse"/>
-        <p style="font-size: 30px;">Mouse</p>
-        </div>
+            <div class="Produtos">
+                <img src="img 2/Gabinete.jpg" alt="Gabinete">
+                <h3>Gabinete Gamer</h3>
+                <p>R$ 250,00</p>
+                <button>Comprar</button>
+            </div>
 
-    <div>
-        <img src="../img 2/Gabinete.jpg" alt="Gabinete"/>
-        <p style="font-size: 30px;">Gabinete</p>
-    </div>
+            <div class="Produtos">
+                <img src="img 2/monitor.jpg" alt="Monitor">
+                <h3>Monitor Gamer</h3>
+                <p>R$ 1.250,00</p>
+                <button>Comprar</button>
+            </div>
 
-    
-    <p>Periféricos de PC são dispositivos externos que se conectam ao computador para enviar ou receber informações.
-    Entrada: Enviam dados para o computador. Exemplos: teclado, mouse e microfone. Saída: Mostram dados processados pelo computador.
-    Exemplos: monitor e caixas de som.</p>
-    </body>
+            <div class="Produtos">
+                <img src="img 2/mouse.webp" alt="Mouse">
+                <h3>Mouse Gamer</h3>
+                <p>R$ 650,00</p>
+                <button>Comprar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Minha Loja</p>
+    </footer>
+</body>
 </html>
