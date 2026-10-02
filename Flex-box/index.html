@@ -13,30 +13,129 @@
             box-shadow: none;
         }
 
+        body{
+            height: 100vh;
+            background-color: rgb(238, 238, 238);
+        }
         .container{
-            border: 1px solid black;
             display:flex;
             flex-direction: row;
-            justify-content: center;
-            background-color: gray;
-            gap: 20px;
-            
+            justify-content: space-around;
+            background-color: white;
+            gap: 10px;
+            width: 80%;
         }
 
         .cards{
             border: 1px solid red;
-            height: 400px;
-            width: 300px;
-            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            /* background-color: red; */
+            flex-direction:column;
+            align-items:center;
+            display:flex;
+            /* background-color: orange; */
+        }
+
+        .main{
+            display: flex;
+            flex-direction:column;
+            gap: 100px;
+            /* justify-content: start;*/
+            align-items:center;
+            height: 100%;
+        }
+        .img-card{
+            width: 120px;
+        }
+
+        header {
+            height: 80px;
+            background-color:yellow;
+        }
+
+        .logo-cabecalho{
+            width: 80px;
+        }
+
+        .logo-navegacao{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 30px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo-navegacao">
+            <img
+            src="../img/logo-mercado-livre.png"
+            alt="Logo do Mercado Livre"
+            class="logo-cabecalho"/>
+        </div>
+    </header>
+
+    <div class="main">
     <div class="container">
+    <div class="cards">
+    <img src="../img/carro.png" alt="" class="img-card"/>
+
+    <p> Carro automotivo para corrida de formula 3...</p>
+    </div>
+
+     <div class="container">
+        <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
+
+    <p> Carro automotivo para corrida de formula 3...</p>
+    </div>
+
+        <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
+
+    <p> Carro automotivo para corrida de formula 3...</p>
+    </div>
+
+        <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
+
+    <p> Carro automotivo para corrida de formula 3...</p>
+    </div>
+
+        <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
+
+    <p> Carro automotivo para corrida de formula 3...</p>
+    </div>
+
+     </div>
+     <div class="container">
+        <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
+
+    <p> Carro automotivo para corrida de formula 3...</p></div>
+        <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
+
+    <p> Carro automotivo para corrida de formula 3...</p></div>
+        <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
+
+    <p> Carro automotivo para corrida de formula 3...</p></div>
+        <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
+
+    <p> Carro automotivo para corrida de formula 3...</p></div>
+     </div>
+
+    <!-- <div class="container">
         <div class="cards"></div>
         <div class="cards"></div>
         <div class="cards"></div>
         <div class="cards"></div>
+     </div>
+     <div class="container">
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+     </div> -->
+
     </div>
 </body>
 </html>
