@@ -6,6 +6,12 @@
     <title>Flex Box</title>
 
     <style>
+        :root{
+            --altura-cabecalho: 80px;
+
+            --com-tema-padrao-1: #ffe600;
+            --com-tema-secundaria: white;
+        }
 
         *{
             margin: 0;
@@ -43,15 +49,15 @@
             gap: 100px;
             /* justify-content: start;*/
             align-items:center;
-            height: 100%;
+            height: calc(100vh - var(--altura-cabecalho));
         }
         .img-card{
             width: 120px;
         }
 
         header {
-            height: 80px;
-            background-color:yellow;
+            height: var(--altura-cabecalho);
+            background-color: var(--com-tema-padrao-1);
         }
 
         .logo-cabecalho{
@@ -65,6 +71,11 @@
             justify-content: space-between;
             align-items: center;
             padding-left: 30px;
+        }
+
+        footer{
+            background-color: var(--com-tema-secundaria);
+            height: 500px;
         }
     </style>
 </head>
@@ -88,12 +99,7 @@
     </header>
 
     <div class="main">
-    <div class="container">
-    <div class="cards">
-    <img src="../img/carro.png" alt="" class="img-card"/>
-
-    <p> Carro automotivo para corrida de formula 3...</p>
-    </div>
+   
 
      <div class="container">
         <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
@@ -117,6 +123,7 @@
     </div>
 
      </div>
+    
      <div class="container">
         <div class="cards"><img src="../img/carro.png" alt="" class="img-card"/>
 
@@ -131,20 +138,10 @@
 
     <p> Carro automotivo para corrida de formula 3...</p></div>
      </div>
-
-    <!-- <div class="container">
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
      </div>
-     <div class="container">
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
-        <div class="cards"></div>
-     </div> -->
 
-    </div>
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
