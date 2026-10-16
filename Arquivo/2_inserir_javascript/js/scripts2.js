@@ -1,0 +1,1 @@
+console.log("Este é o script do bory!");
